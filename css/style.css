@@ -51,11 +51,11 @@ footer {
     padding: 1rem .5rem;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+    color: #cc885d;
   }
 
 footer a:link {
-    color: #c1c1c1;
+    color: #cc885d;
     background-color: transparent;
     text-decoration: none;
   }
