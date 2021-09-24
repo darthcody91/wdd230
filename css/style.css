@@ -7,7 +7,7 @@ footer {
 }
 
 header {
-  background-color: #48424c;
+  background-color: #121316;
   padding: 0.5rem 1rem;
 }
 header img {
@@ -23,7 +23,7 @@ header img {
 
 header h1 {
   font-size: 4rem;
-  color: #cc885d;
+  color: #BC853F;
   text-align: center;
   font-family: "Rock Salt", cursive;
   
@@ -47,21 +47,21 @@ main h1 {
 
 
 footer {
-    background-color: #48424c;
+    background-color: #121316;
     padding: 1rem .5rem;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #cc885d;
+    color: #BC853F;
   }
 
 footer a:link {
-    color: #cc885d;
+    color: #BC853F;
     background-color: transparent;
     text-decoration: none;
   }
   
 footer a:visited {
-    color: #cdb48b;
+    color: #EEEFEE;
     background-color: transparent;
     text-decoration: none;
 }
