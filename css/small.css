@@ -9,22 +9,18 @@ footer {
 header {
   background-color: #121316;
   padding: 0.75rem 1rem;
+  text-align: center;
 }
 header img {
-  float: right;
-}
-
-header img {
-  width: 150px;
+  width: 100px;
   height: auto;
   margin: 10px; 
-  box-shadow: 1px 6px 10px grey;
+  
 }
 
 header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #BC853F;
-  text-align: center;
   font-family: "Rock Salt", cursive;
   
 }
@@ -40,8 +36,13 @@ header h1 {
     
 
 main h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+main ul {
+  list-style: circle;
 }
 
 
@@ -52,6 +53,7 @@ footer {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #BC853F;
+    font-size: .75rem;
   }
 
 footer a:link {

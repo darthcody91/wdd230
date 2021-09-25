@@ -1,0 +1,49 @@
+@media only screen and (min-width: 37.5em) {
+  header h1 {
+    font-size: 3rem;
+    color: #bc853f;
+    font-family: "Rock Salt", cursive;
+  
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section:nth-child(3) {
+    grid-column: span 2;
+    text-align: center;
+  }
+  
+  main section h2 {
+    font-size: 2em;
+    color: #bc853f;
+    font-family: "Rock Salt", cursive;
+    
+  }
+
+  main section h1 {
+    font-size: 1.5em;
+    color: black;
+    font-family: "Dosis", sans-serif;
+    
+}
+
+main section a {
+    font-size: 1em;
+    color: black;
+    font-family: "Dosis", sans-serif;
+    
+}
+
+  main section picture {
+    display: block;
+  }
+  main section picture img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 1px solid #bbb;
+    margin-top: 1rem;
+  }
+}

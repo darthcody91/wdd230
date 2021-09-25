@@ -1,0 +1,21 @@
+@media (min-width: 32.5em) {
+    header img {
+        float: right;
+        width: 150px;
+        box-shadow: 1px 6px 10px grey;
+      }
+    header h1 {
+        font-size: 4rem;
+    }
+    main h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    footer {
+       font-size: 1rem;
+        
+      }
+    main ul {
+        text-align: left;
+      }
+}

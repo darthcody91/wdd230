@@ -1,0 +1,102 @@
+header {
+  background-color: #121316;
+  padding: 0.5rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+  color: #bc853f;
+  font-family: "Rock Salt", cursive;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Rock Salt";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rocksalt/v11/MwQ0bhv11fWD6QsAVOZrt0M6p7NGrQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0000-00FF, U+0000-00FF, U+0000-00FF, U+0000-00FF,
+    U+0000-00FF, U+0000-00FF, U+0000-00FF, U+0000-00FF, U+0000-00FF, U+0000-00FF,
+    U+0000-00FF, U+0000-00FF, U+0000-00FF, U+0000-00FF, U+0000-00FF, U+0000-00FF;
+}
+
+main {
+  max-width: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  font-size: 1rem;
+}
+main section {
+  margin: 0.5rem;
+  border: 1px solid #bbb;
+  padding: 0 1rem;
+  background-color: #eee;
+  text-align: center;
+  border: 2px solid #bbb;
+  border-radius: 20px;
+}
+.cimage {
+  box-shadow: 0 0 20px grey;
+}
+main section picture img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 1px solid #bbb;
+  margin-top: 0.5rem;
+}
+
+main section h2 {
+  font-size: 1.5em;
+  color: #bc853f;
+  font-family: "Rock Salt", cursive;
+  text-align: center;
+}
+
+main section h1 {
+  font-size: 1em;
+  color: black;
+  font-family: "Dosis", sans-serif;
+}
+
+main section a {
+  font-size: 0.75em;
+  color: black;
+  font-family: "Dosis", sans-serif;
+}
+
+main section p {
+  font-size: 1em;
+  color: black;
+  font-family: "Dosis", sans-serif;
+}
+
+footer {
+  background-color: #121316;
+  padding: 1rem .5rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #BC853F;
+  font-size: .75rem;
+}
+
+footer a:link {
+  color: #BC853F;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #EEEFEE;
+  background-color: transparent;
+  text-decoration: none;
+}
+footer a:hover {
+color: #AED9E0;
+background-color: transparent;
+text-decoration: underline;
+}
