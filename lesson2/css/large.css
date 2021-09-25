@@ -19,6 +19,11 @@ main section:nth-child(3) {
 
   main section {
     text-align: match-parent;
+    box-shadow: 0 4px 8px 0 grey;
   }
 
+}
+
+footer {
+  font-size: 1rem;
 }

@@ -13,11 +13,12 @@
   main section:nth-child(3) {
     grid-column: span 2;
     text-align: center;
+    
   }
   
   main section h2 {
     font-size: 2em;
-    color: #bc853f;
+    
     font-family: "Rock Salt", cursive;
     
   }
@@ -26,6 +27,7 @@
     font-size: 1.5em;
     color: black;
     font-family: "Dosis", sans-serif;
+    
     
 }
 

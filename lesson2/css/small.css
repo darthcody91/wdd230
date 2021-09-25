@@ -9,12 +9,7 @@ header h1 {
   font-family: "Rock Salt", cursive;
   text-align: center;
 }
-header p {
-  font-size: 1.5rem;
-  color: #bc853f;
-  font-family: "rock salt", cursive;
-  text-align: center;
-}
+
 
 
 
@@ -40,29 +35,29 @@ main {
 }
 main section {
   margin: 0.5rem;
-  border: 1px solid #bbb;
+  border: 1px solid #eeefee;
   padding: 0 1rem;
-  background-color: #eee;
+  background-color: #eeefee;
   text-align: center;
-  border: 2px solid #bbb;
-  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 grey;
 }
 .cimage {
-  box-shadow: 0 0 20px grey;
+  box-shadow: 0 0 20px #d0d0d0;
 }
 main section picture img {
   width: 100%;
   max-width: 300px;
   height: auto;
-  border: 1px solid #bbb;
+  border: 1px solid #eeefee;
   margin-top: 0.5rem;
 }
 
 main section h2 {
   font-size: 1.5em;
-  color: #bc853f;
+  color: #1a1c20;
   font-family: "Rock Salt", cursive;
   text-align: center;
+  
 }
 
 main section h1 {
