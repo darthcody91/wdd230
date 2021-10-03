@@ -1,0 +1,101 @@
+header,
+main,
+footer {
+  max-width: 769px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+}
+header img {
+    width: 75px;
+    height: auto;
+    margin: 10px; 
+    
+  }
+
+header h1 {
+  font-size: 2rem;
+  color: #283618;
+  font-family: "Bebas Neue", cursive;
+}
+
+main {
+  font-size: 1.25rem;
+}
+
+main h1 {
+  font-size: 1.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+main img {
+  width: 700px;
+  height: auto;
+}
+
+
+
+
+footer {
+  background-color: #283618;
+  padding: 1rem .5rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fefae0;
+  font-size: 1rem;
+}
+
+footer a:link {
+  color: #dda15e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #EEEFEE;
+  background-color: transparent;
+  text-decoration: none;
+}
+footer a:hover {
+color: #dda15e;
+background-color: transparent;
+text-decoration: underline;
+}
+
+
+nav {
+	background-color: #283618;
+  text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fefae0;
+  font-family: "Bebas Neue", cursive;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1rem;
+	background: #283618;
+  transition: 0.5s;
+}
+nav a:hover {
+    background-color: #dda15e;
+    color: #283618;
+  
+	--d: 75%;
+}
+.active {
+	color: #dda15e;
+}
+

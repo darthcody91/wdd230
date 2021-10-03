@@ -1,1 +1,21 @@
-
+@media only screen and (min-width: 37.5em) {
+  header img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    float: left;
+  }
+  header h1 {
+    font-size: 5rem;
+    color: #283618;
+    font-family: "Bebas Neue", cursive;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }
+}
+nav ul li a {
+	font-size: 2rem;
+}
