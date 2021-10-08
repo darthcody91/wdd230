@@ -1,0 +1,131 @@
+header,
+main,
+footer {
+  max-width: 769px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+}
+
+header img {
+  width: 65px;
+  height: auto;
+  margin: 10px;
+}
+
+
+
+
+
+nav a:hover {
+  background-color: #dda15e;
+  color: #283618;
+
+  --d: 75%;
+}
+.active {
+  color: #dda15e;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 2.75rem;
+    color: #283618;
+    font-family: "Bebas Neue", cursive;
+    margin: 0 0 0 0px;
+    letter-spacing: 1px;
+}
+
+.motto {
+  font-family: 'Titillium Web', sans-serif;
+  color: #1a1c20;
+  
+  font-size: 1.50rem;
+}
+
+
+.navigation {
+    background-color: #283618;
+    text-align: center;
+    box-shadow: 0 2px 15px gray;
+  list-style: none;
+  padding: 0;
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: right;
+  text-decoration: none;
+  color: #fefae0;
+  font-size: 2.75rem;
+  transition: 0.5s;
+  font-family: "Bebas Neue", cursive;
+}
+.navigation a:hover {
+    background-color: #dda15e;
+    color: #283618;
+}
+
+.responsive li {
+  display: block;
+}
+
+
+
+.pagetitle {
+    font-size: 2.75rem;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    color: #283618;
+  }
+
+main section h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #dda15e;
+    
+}
+  
+
+footer {
+    background-color: #283618;
+    padding: 0.25rem 0.25rem;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fefae0;
+    font-size: 1.50rem;
+  }
+  
+  footer a:link {
+    color: #dda15e;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  footer a:visited {
+    color: #eeefee;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #dda15e;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  
+    

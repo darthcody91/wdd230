@@ -1,0 +1,93 @@
+@media only screen and (min-width: 32.5em) {
+  header img {
+    width: 100px;
+    height: auto;
+    float: left;
+  }
+
+  .headings h1 {
+    font-size: 4rem;
+    padding-top: 1.5rem;
+    align-content: center;
+    
+  }
+
+  .motto {
+    font-family: "Titillium Web", sans-serif;
+    color: #1a1c20;
+    padding-bottom: 1rem;
+
+    font-size: 2rem;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fefae0;
+    font-size: 2.15rem;
+    transition: 0.5s;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 1px;
+  }
+
+  .navigation a:hover {
+    background-color: #dda15e;
+    color: #283618;
+
+    --d: 75%;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+
+  .active {
+    color: #dda15e;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+}
+
+
+
+main h1 {
+  
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+
+footer {
+  background-color: #283618;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  color: #fefae0;
+  
+}
+
+footer a:link {
+  color: #dda15e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #eeefee;
+  background-color: transparent;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #dda15e;
+  background-color: transparent;
+  text-decoration: underline;
+}
