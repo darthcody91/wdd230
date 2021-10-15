@@ -1,6 +1,10 @@
- 
-  
-  header,
+
+
+
+
+
+
+header,
 main,
 footer {
   max-width: 769px;
@@ -109,7 +113,7 @@ footer {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     color: #fefae0;
-    font-size: 1.50em;
+    font-size: 1.50rem;
   }
   
   footer a:link {
@@ -130,32 +134,4 @@ footer {
   }
   
   
-  img {
-    width:fit-content;
-  }
-
- 
-  
-
-  header,
-main,
-footer {
-  max-width: 769px;
-  margin: 0 auto;
-}
-
-header {
-  padding: 10px;
-  text-align: center;
-}
-
-header img {
-  width: 65px;
-  height: auto;
-  margin: 10px;
-}
-
-
-
-
-
+    
