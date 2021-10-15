@@ -12,6 +12,7 @@
     
   }
 
+  
   .motto {
     font-family: "Titillium Web", sans-serif;
     color: #1a1c20;
@@ -36,6 +37,7 @@
     letter-spacing: 1px;
   }
 
+  
   .navigation a:hover {
     background-color: #dda15e;
     color: #283618;
@@ -51,9 +53,12 @@
     text-align: center;
   }
 
-  .active {
-    color: #dda15e;
+  .navigation .active {
+    color: #283618;
+    background-color: #fefae0;
   }
+
+
   .navigation li:first-child {
     display: none;
   }
@@ -73,6 +78,7 @@ footer {
   font-family: "Titillium Web", sans-serif;
   color: #fefae0;
   font-size: 1em;
+  width:100%;
 }
 
 footer a:link {
@@ -91,3 +97,36 @@ footer a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
+
+img {
+  width:100%;
+}
+
+.container {
+  border: 1px solid #DDDDDD;
+  width: fit-content;
+  position: relative;
+  display: block;
+}
+
+
+
+
+table, th, td {
+  padding: .5em;
+  font-size: 1.25em;
+
+}
+
+.sumlarge {
+  float: left;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  background-color: #fefae0;
+  padding: 5px;
+  color: #283618;
+  display: block;
+}
+
+   
