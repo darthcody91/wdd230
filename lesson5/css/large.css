@@ -153,7 +153,7 @@
 .flex {
 	display: flex;
 	
-	/*flex-flow: row wrap;*/
+	
 }
 
 .flex-col {
@@ -164,11 +164,7 @@
 	
 	text-align: center;
 }
-.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
-	opacity: 0.75;
-	background-color: black;
-	color: white;
-}
+
 
 
 .col-head {
