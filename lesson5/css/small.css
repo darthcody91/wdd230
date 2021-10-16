@@ -1,6 +1,7 @@
 header,
 main {
-  margin: .5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 header {
@@ -72,11 +73,6 @@ nav a:hover {
   color: #283618;
 }
 
-
-
-
-
-
 .responsive li {
   display: block;
 }
@@ -98,7 +94,6 @@ main section h1 {
 .weatherimg {
   width: 100%;
 }
-
 
 footer {
   background-color: #283618;
@@ -126,8 +121,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
-
 table,
 th,
 td {
@@ -142,7 +135,6 @@ main h1 {
   text-align: center;
   font-size: 4em;
   letter-spacing: 2px;
-
 }
 
 .sumlarge h2 {
@@ -162,44 +154,42 @@ main h1 {
 }
 
 .flex {
-	display: flex;
- align-content: center;
-	
+  display: flex;
+  align-content: center;
 }
 
 .flex-col {
-	flex: 1 1 auto;
-	background-color: white;
+  flex: 1 1 auto;
+  background-color: white;
 }
-.flex-col, .column-col, .grid-col {
-	
-	text-align: center;
+.flex-col,
+.column-col,
+.grid-col {
+  text-align: center;
 }
 
-
-main h2{
+main h2 {
   font-family: "Bebas Neue", cursive;
   text-align: center;
   font-size: 2.5em;
   letter-spacing: 2px;
-
 }
 .col-head {
-	display: block;
-	padding: 3.5px;
-	
-	text-align: center;
+  display: block;
+  padding: 3.5px;
+
+  text-align: center;
 }
 
 .flex img {
-	border-radius: 40px;
-	padding: 0.25rem;
+  border-radius: 40px;
+  padding: 0.25rem;
   width: 75%;
 }
 
 .data {
-	display: block;
-	padding: 0 5px 5px;
-	font-size: 1rem;
-	text-align: center;
+  display: block;
+  padding: 0 5px 5px;
+  font-size: 1rem;
+  text-align: center;
 }
