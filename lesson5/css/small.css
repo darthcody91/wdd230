@@ -229,7 +229,7 @@ main h2 {
 } 
 
 .article {
-  padding-bottom: 4px;
+  padding: 2em;
   font-size: 16px;
   font-family: "Titillium Web", sans-serif;
   background-color: #fefae0;
@@ -238,12 +238,8 @@ main h2 {
 
 .article img {
   float: none;
-  
   position: relative;
-  
-  margin-left: auto;
-  margin-right: auto;
-  width: 350px;
+  width: 100%;
 }
 
 .article ui {
