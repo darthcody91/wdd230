@@ -99,6 +99,35 @@ main section h1 {
   width: 100%;
 }
 
+
+footer {
+  background-color: #283618;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  color: #fefae0;
+  font-size: 1em;
+  width: 100%;
+}
+
+footer a:link {
+  color: #dda15e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #eeefee;
+  background-color: transparent;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #dda15e;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
 table,
 th,
 td {
@@ -124,7 +153,8 @@ main h1 {
   font-size: 1.5em;
   border: 1px solid black;
   border-radius: 15px;
-  color: #283618;
+  color: white;
   display: block;
   margin-bottom: 1em;
+  background-color: #283618;
 }
