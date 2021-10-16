@@ -1,10 +1,10 @@
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 900px) {
   header {
     margin: auto;
   }
   main {
-    margin-left:  7em;
-    margin-right: 7em;
+    margin-left:  10em;
+    margin-right: 10em;
   }
 
   .headerbar {
@@ -124,8 +124,8 @@
   table,
   th,
   td {
-    padding: 0.5em;
-    font-size: 1em;
+    
+    font-size: 1.15em;
     font-family: "Titillium Web", sans-serif;
   }
 
@@ -134,12 +134,14 @@
     position: absolute;
     left: 25px;
     top: 25px;
-    background-color: #fefae0;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
-    color: #283618;
+    color: white;
     display: block;
     border: none;
     border-radius: 0px;
+    font-size: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .sumlarge h2 {
@@ -166,7 +168,9 @@
   .col-head {
     display: block;
     padding: 5px;
-
+    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 2px;
     text-align: center;
   }
 
@@ -179,7 +183,44 @@
   .data {
     display: block;
     padding: 0 5px 5px;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     text-align: center;
+    font-family: "Titillium Web", sans-serif;
   }
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #ffc857;
+  color: #323031;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 2em;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 2em;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+} 
+
+
+
+
+
+
 }
