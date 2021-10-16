@@ -3,7 +3,7 @@
     margin: auto;
   }
   main {
-    margin: 5em;
+    margin: 7em;
   }
 
   .headerbar {
@@ -150,7 +150,46 @@
   
 }
 
+.flex {
+	display: flex;
+	
+	/*flex-flow: row wrap;*/
+}
 
+.flex-col {
+	flex: 1 1 auto;
+	background-color: white;
+}
+.flex-col, .column-col, .grid-col {
+	
+	text-align: center;
+}
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: black;
+	color: white;
+}
+
+
+.col-head {
+	display: block;
+	padding: 5px;
+	
+	text-align: center;
+}
+
+.flex img {
+	border-radius: 40px;
+	padding: 0.25rem;
+  width: 100%;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
 
 
 

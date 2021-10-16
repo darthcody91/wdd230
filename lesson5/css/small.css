@@ -1,6 +1,6 @@
 header,
 main {
-  margin: 1em;
+  margin: .5em;
 }
 
 header {
@@ -157,4 +157,45 @@ main h1 {
   display: block;
   margin-bottom: 1em;
   background-color: #283618;
+}
+
+.flex {
+	display: flex;
+ align-content: center;
+	
+}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: white;
+}
+.flex-col, .column-col, .grid-col {
+	
+	text-align: center;
+}
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: black;
+	color: white;
+}
+
+
+.col-head {
+	display: block;
+	padding: 3.5px;
+	
+	text-align: center;
+}
+
+.flex img {
+	border-radius: 40px;
+	padding: 0.25rem;
+  width: 75%;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 1rem;
+	text-align: center;
 }
