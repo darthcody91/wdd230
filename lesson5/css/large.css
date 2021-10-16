@@ -78,12 +78,7 @@
     display: none;
   }
 
-  .sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%
-}
+
   main h1 {
     font-family: "Bebas Neue", cursive;
     text-align: center;
