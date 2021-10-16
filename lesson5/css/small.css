@@ -1,14 +1,6 @@
-
-
-
-
-
-
 header,
-main,
-footer {
-  max-width: 769px;
-  margin: 0 auto;
+main {
+  margin: 1em;
 }
 
 header {
@@ -21,10 +13,6 @@ header img {
   height: auto;
   margin: 10px;
 }
-
-
-
-
 
 nav a:hover {
   background-color: #dda15e;
@@ -42,25 +30,24 @@ nav a:hover {
 }
 
 .headings h1 {
-    font-size: 2.75rem;
-    color: #283618;
-    font-family: "Bebas Neue", cursive;
-    margin: 0 0 0 0px;
-    letter-spacing: 1px;
+  font-size: 2.25rem;
+  color: #283618;
+  font-family: "Bebas Neue", cursive;
+  margin: 0 0 0 0px;
+  letter-spacing: 1px;
 }
 
 .motto {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color: #1a1c20;
-  
-  font-size: 1.50rem;
+
+  font-size: 1rem;
 }
 
-
 .navigation {
-    background-color: #283618;
-    text-align: center;
-    box-shadow: 0 2px 15px gray;
+  background-color: #283618;
+  text-align: center;
+  box-shadow: 0 2px 15px gray;
   list-style: none;
   padding: 0;
 }
@@ -81,57 +68,73 @@ nav a:hover {
   font-family: "Bebas Neue", cursive;
 }
 .navigation a:hover {
-    background-color: #dda15e;
-    color: #283618;
+  background-color: #dda15e;
+  color: #283618;
 }
+
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 
 .responsive li {
   display: block;
 }
 
-
-
 .pagetitle {
-    font-size: 2.75rem;
-    font-family: "Bebas Neue", cursive;
-    text-align: center;
-    color: #283618;
-  }
+  font-size: 2.75rem;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  color: #283618;
+}
 
 main section h1 {
-    font-size: 2rem;
-    letter-spacing: 1px;
-    font-family: 'Titillium Web', sans-serif;
-    background-color: #dda15e;
-    
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #dda15e;
 }
-  
 
-footer {
-    background-color: #283618;
-    padding: 0.25rem 0.25rem;
-    text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    color: #fefae0;
-    font-size: 1.50rem;
-  }
-  
-  footer a:link {
-    color: #dda15e;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  footer a:visited {
-    color: #eeefee;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  footer a:hover {
-    color: #dda15e;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  
-    
+.weatherimg {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  padding: 0.5em;
+  font-size: 1em;
+  font-family: "Titillium Web", sans-serif;
+  width: 100%;
+}
+
+main h1 {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  font-size: 3em;
+}
+
+.sumlarge h2 {
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.sumlarge {
+  font-size: 1.5em;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: #283618;
+  display: block;
+  margin-bottom: 1em;
+}

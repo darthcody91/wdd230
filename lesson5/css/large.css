@@ -1,28 +1,45 @@
-@media only screen and (min-width: 32.5em) {
-  header img {
+@media only screen and (min-width: 50em) {
+  header {
+    margin: auto;
+  }
+  main {
+    margin: 5em;
+  }
+
+  .headerbar {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerimg {
+    position: absolute;
+    left: 25vw;
     width: 100px;
-    height: auto;
-    float: left;
+    padding-top: 3em;
+    padding-bottom: 2em;
+  }
+  .headings {
+    flex: 1;
   }
 
   .headings h1 {
-    font-size: 4rem;
-    padding-top: 1.5rem;
-    align-content: center;
-    
+    font-size: 3.5rem;
+
+    text-align: center;
   }
 
-  
   .motto {
     font-family: "Titillium Web", sans-serif;
     color: #1a1c20;
-    padding-bottom: 1rem;
 
     font-size: 2rem;
   }
 
   .navigation {
     display: flex;
+    
   }
 
   .navigation a {
@@ -37,7 +54,6 @@
     letter-spacing: 1px;
   }
 
-  
   .navigation a:hover {
     background-color: #dda15e;
     color: #283618;
@@ -58,75 +74,83 @@
     background-color: #fefae0;
   }
 
-
   .navigation li:first-child {
     display: none;
   }
-}
 
+  main h1 {
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    font-size: 3em;
+  }
 
+  footer {
+    background-color: #283618;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    color: #fefae0;
+    font-size: 1em;
+    width: 100%;
+  }
 
-main h1 {
-  
-  font-family: "Bebas Neue", cursive;
-  text-align: center;
-}
+  footer a:link {
+    color: #dda15e;
+    background-color: transparent;
+    text-decoration: none;
+  }
 
-footer {
-  background-color: #283618;
+  footer a:visited {
+    color: #eeefee;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #dda15e;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  table,
+  th,
+  td {
+    padding: 0.5em;
+    font-size: 1em;
+    font-family: "Titillium Web", sans-serif;
+  }
+
+  .sumlarge {
+    float: left;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    background-color: #fefae0;
+    padding: 5px;
+    color: #283618;
+    display: block;
+    border: none;
+    border-radius: 0px;
+  }
+
+.sumlarge h2 {
+  font-size: 1.5em;
   text-align: center;
   font-family: "Titillium Web", sans-serif;
-  color: #fefae0;
-  font-size: 1em;
-  width:100%;
-}
-
-footer a:link {
-  color: #dda15e;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-footer a:visited {
-  color: #eeefee;
-  background-color: transparent;
-  text-decoration: none;
-}
-footer a:hover {
-  color: #dda15e;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-img {
-  width:100%;
-}
-
-.container {
-  border: 1px solid #DDDDDD;
-  width: fit-content;
-  position: relative;
-  display: block;
+  font-style: bold;
+  
 }
 
 
 
 
-table, th, td {
-  padding: .5em;
-  font-size: 1.25em;
 
 }
-
-.sumlarge {
-  float: left;
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  background-color: #fefae0;
-  padding: 5px;
-  color: #283618;
-  display: block;
-}
-
-   
