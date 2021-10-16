@@ -89,6 +89,7 @@ main section h1 {
   letter-spacing: 1px;
   font-family: "Titillium Web", sans-serif;
   background-color: #dda15e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .weatherimg {
@@ -131,10 +132,12 @@ td {
 }
 
 main h1 {
-  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #dda15e;
   text-align: center;
-  font-size: 4em;
-  letter-spacing: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sumlarge h2 {
@@ -177,7 +180,7 @@ main h2 {
 .col-head {
   display: block;
   padding: 3.5px;
-
+  font-family: "Titillium Web", sans-serif;
   text-align: center;
 }
 
@@ -192,6 +195,7 @@ main h2 {
   padding: 0 5px 5px;
   font-size: 1rem;
   text-align: center;
+  font-family: "Titillium Web", sans-serif;
 }
 
  /* The alert message box */
@@ -223,3 +227,29 @@ main h2 {
 .closebtn:hover {
   color: black;
 } 
+
+.article {
+  padding-bottom: 4px;
+  font-size: 16px;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #fefae0;
+  
+}
+
+.article img {
+  float: none;
+  
+  position: relative;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+
+.article ui {
+  list-style: none;
+}
+
+.recipe {
+  font-style: oblique;
+}

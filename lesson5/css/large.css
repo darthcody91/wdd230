@@ -3,7 +3,7 @@
     margin: auto;
   }
   main {
-    margin-left:  10em;
+    margin-left: 10em;
     margin-right: 10em;
   }
 
@@ -78,11 +78,21 @@
     display: none;
   }
 
+  main section h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: "Titillium Web", sans-serif;
+    background-color: #dda15e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
   main h1 {
-    font-family: "Bebas Neue", cursive;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: "Titillium Web", sans-serif;
+    background-color: #dda15e;
     text-align: center;
-    font-size: 4em;
-    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   footer {
@@ -124,7 +134,6 @@
   table,
   th,
   td {
-    
     font-size: 1.15em;
     font-family: "Titillium Web", sans-serif;
   }
@@ -144,11 +153,11 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .sumlarge h2 {
+  .sumlarge h3 {
     font-size: 1.5em;
     text-align: center;
     font-family: "Titillium Web", sans-serif;
-    font-style: bold;
+    font-weight: bold;
   }
 
   .flex {
@@ -188,39 +197,50 @@
     font-family: "Titillium Web", sans-serif;
   }
 
-/* The alert message box */
-.alert {
-  padding: 20px;
-  background-color: #ffc857;
-  color: #323031;
-  margin-bottom: 15px;
-  position: relative;
-  font-size: 2em;
-  text-align: center;
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 1px;
-}
+  .alert {
+    padding: 20px;
+    background-color: #ffc857;
+    color: #323031;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 1px;
+  }
 
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 2em;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 2em;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: black;
-} 
+  .closebtn:hover {
+    color: black;
+  }
 
 
+  .article {
+    padding-bottom: 4px;
+    font-size: 16px;
+    font-family: "Titillium Web", sans-serif;
+    background-color: #fefae0;
+    
+  }
 
+  .article img {
+    float: right;
+    width: 500px;
+    position: relative;
+    padding: 15px;
+  }
 
-
-
+  .article ui {
+    list-style: none;
+  }
 }

@@ -20,18 +20,19 @@
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/dates.js"></script>
     <script defer src="js/nav.js"></script>
+    <script defer src="js/alert.js"></script>
   </head>
 
-
-
-
   <body>
-    <div class="alert">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-      Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
-    </div> 
+    <div class="alert" style="display: none">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
+    </div>
     <header class="headerbar">
-      <picture class="headerimg ">
+      <picture class="headerimg">
         <img src="images/logo.png" alt="se idaho logo" />
       </picture>
       <section class="headings">
@@ -39,7 +40,7 @@
         <q class="motto">We're more than just potato farmers</q>
       </section>
     </header>
-   
+
     <nav>
       <ul class="navigation">
         <li><a class="ham" href="#">≡</a></li>
@@ -51,13 +52,12 @@
         <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
-    
+
     <main>
-      
       <h1>PRESTON IDAHO</h1>
       <div class="container">
         <div class="sumlarge">
-          <h2>WEATHER SUMMARY</h2>
+          <h3>WEATHER SUMMARY</h3>
           <table>
             <tr>
               <td>Currently</td>
@@ -84,51 +84,81 @@
         <img class="weatherimg" src="images/farm.jpg" alt="farm" />
       </div>
 
-
-      <h2>FIVE DAY FORECAST</h2>
+      <h1>FIVE DAY FORECAST</h1>
       <div class="flex">
         <div class="flex-col">
           <span class="col-head">FRI</span>
-          <img src="images/sunny.png" alt="sunny">
+          <img src="images/sunny.png" alt="sunny" />
           <span class="data">Sunny</span>
         </div>
         <div class="flex-col">
           <span class="col-head">SAT</span>
-          <img src="images/sunnycloudy.png" alt="partly cloudy">
+          <img src="images/sunnycloudy.png" alt="partly cloudy" />
           <span class="data">Overcast</span>
         </div>
         <div class="flex-col">
           <span class="col-head">SUN</span>
-          <img src="images/cloud.png" alt="cloudy">
+          <img src="images/cloud.png" alt="cloudy" />
           <span class="data">Cloudy</span>
         </div>
         <div class="flex-col">
           <span class="col-head">MON</span>
-          <img src="images/rain.png" alt="rain">
+          <img src="images/rain.png" alt="rain" />
           <span class="data">Rain</span>
         </div>
         <div class="flex-col">
           <span class="col-head">TUE</span>
-          <img src="images/snowy.png" alt="snow">
+          <img src="images/snowy.png" alt="snow" />
           <span class="data">Snow</span>
         </div>
-        </div>
+      </div>
 
-      
-      <section>
-        <h1>Article</h1>
+      <section class="article">
+        <h1>People of Preston</h1>
+        <img src="images/golda.jpg" alt="golda" />
+        <p>
+          This week in People of Preston, we want to spotlight Ms. Golda June.
+          Golda was born and raised in Preston. She was born in 1930 in the
+          potato shed on the farm. He married her late husband, Davey June in
+          1950. They had nine children together, have 40 grandchildren and 10
+          great-grandchildren. She loves to cook, knit, play canasta, read the
+          paper, and spend time with the kids. She loves to have the kids over
+          to show them the farm.</p>
+          <p>Her oldest son, Steve has taken over the potato
+          farm. She enjoys making anything with potatos, and selling them on
+          Saturday's at the farmer's market. Keep watch for her booth, and her
+          "tater salad". </p>
+          <p>Golda has decided to share her famous tater salad with her community.</p>
+          <div class="recipe">
+          <p>GOLDA'S TATER SALAD</p>
+          <ui>
+            <li>5 Potatos</li>
+            <li>3 Eggs</li>
+            <li>1 Cup chopped celery</li>
+            <li>1/2 Cup chopped onion</li>
+            <li>1/2 Cup sweet pickle relish</li>
+            <li>1/4 Teaspoon garlic salt</li>
+            <li>1/4 Teaspoon celery salt</li>
+            <li>1 Tablespoon perepared mustard</li>
+            <li>Ground black pepper to taste</li>
+            <li>1/4 Cup mayonnaise</li>
+            <li>1 cup of grandma's love</li>
+          </ui>
+          <p>Bring a large pot of salted water to a boil. Add potatoes and cook until tender but still firm, about 15 minutes. Drain, cool, peel and chop.</p>
+          <p>Place eggs in a saucepan and cover with cold water. Bring water to a boil; cover, remove from heat, and let eggs stand in hot water for 10 to 12 minutes. Remove from hot water, cool, peel and chop.</p>
+          <p>In a large bowl, combine the potatoes, eggs, celery, onion, relish, garlic salt, celery salt, mustard, pepper and mayonnaise. Mix together well and refrigerate until chilled.</p>
+        </div>
+        </p>
+        
       </section>
       <section>
         <h1>Contact Information</h1>
       </section>
-      
     </main>
     <br />
     <footer>
-      <footer>
-        <p>&copy; <span id="copyrightyear"></span> | CODY THOMAS</p>
-        <p><span id="currentdate"></span></p>
-      </footer>
+      <p>&copy; <span id="copyrightyear"></span> | CODY THOMAS</p>
+      <p><span id="currentdate"></span></p>
     </footer>
   </body>
 </html>
