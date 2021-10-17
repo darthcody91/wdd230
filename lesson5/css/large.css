@@ -102,6 +102,7 @@
     color: #fefae0;
     font-size: 1em;
     width: 100%;
+    padding: 3px;
   }
 
   footer a:link {
@@ -243,4 +244,101 @@
   .article ui {
     list-style: none;
   }
+
+/* information */
+
+  .flexcontainer {
+    display: flex;
+   /* flex-direction: row; */
+  
+  }
+  
+.flextitle {
+  font-size: 2em;
+}
+
+
+.flexleft img {
+  width:50% ;
+  display: block;
+  max-width: 50vh;
+  align-items: center;
+  justify-content: center;
+  margin:1em;
+  margin-top: 3em;
+  margin-left:6em;
+  border: 2px solid #fefae0;
+  border-radius: 25px;
+}
+
+  .flexleft {
+    width: 100%;
+    height: 50vh;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 2px;
+    padding: 5px;
+    background-color: #283618 ;
+    
+    
+  }
+  
+  .flexright h5 {
+    font-size: 2em;
+    
+
+  }
+  
+  .flexright {
+    width: 100%;
+    height: 50vh;
+    font-family: "Titillium Web", sans-serif;
+    padding: 5px;
+    background-color: #283618 ;
+    text-align: left;
+    font-size: 18px;
+    color: #fefae0;
+    border: none;
+    border-radius: 0px;
+
+  }
+  
+  
+
+  
+  /* links */
+  .fa {
+    padding: 29px;
+    font-size: 30px;
+    width: 5%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 50%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+
+
+
+
+
 }
