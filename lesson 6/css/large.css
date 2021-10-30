@@ -126,6 +126,12 @@
     width: 100%;
   }
 
+  .weatherimage {
+    width: 100%;
+    
+  }
+  
+
   .container {
     width: 100%;
     position: relative;
