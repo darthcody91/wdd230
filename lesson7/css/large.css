@@ -1,10 +1,15 @@
 @media only screen and (min-width: 60em) {
     header {
       margin: auto;
+   
+    
+    
+ 
     }
     main {
       margin-left: 10em;
       margin-right: 10em;
+    
     }
   
     .headerbar {
@@ -79,7 +84,18 @@
     }
   
     
+.title {
+      font-size: 2rem;
+      letter-spacing: 1px;
+      font-family: "Titillium Web", sans-serif;
+      background-color: #dda15e;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 50px;
+    }
   
+
+
 
     main {
       grid-template-columns: 1fr 1fr 1fr;
