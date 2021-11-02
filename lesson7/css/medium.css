@@ -1,0 +1,44 @@
+@media only screen and (min-width: 37.5em) {
+    header img {
+      display: none;
+    }
+   
+  
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+
+    main section:nth-child(9) {
+      grid-column: span 2;
+      text-align: center;
+      
+    }
+   
+    main section picture {
+      display: block;
+    }
+    main section picture img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border: 1px solid #bbb;
+      margin-top: 1rem;
+    
+  }
+  
+  .desc {
+    display: none;
+  }
+    
+  
+  
+
+  
+  
+  
+  
+  
+  
+  }
+  

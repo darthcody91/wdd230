@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRESTON</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <meta name="description" content="WDD 230: Weather Site" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script src="js/app.js" defer></script>
+  </head>
+
+  <body>
+    <header class="headerbar">
+      <picture class="headerimg">
+        <img src="images/logo.png" alt="se idaho logo" />
+      </picture>
+      <section class="headings">
+        <h1>SOUTHEAST IDAHO CO-OP</h1>
+        <q class="motto">We're more than just potato farmers</q>
+      </section>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">≡</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a  href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a class="active" href="#">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+
+      <section class="box">
+        <picture class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/cloudy.jpg"
+            alt="cloudy"
+          />
+        </picture>
+        <p class="desc">CLOUDY</p>
+      </section>
+
+      <section class="responsive">
+        <picture class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/cold.jpg"
+            alt="cold"
+          />
+        </picture>
+        <p class="desc">COLD</p>
+      </section>
+
+      <section class="responsive">
+        <picture class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/lightning.jpg"
+            alt="lightning"
+          />
+        </picture>
+        <p class="desc">LIGHTNING</p>
+      </section>
+
+      <section class="responsive">
+        <picture class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/overcast.jpg"
+            alt="overcast"
+          />
+        </picture>
+        <p class="desc">OVERCAST</p>
+      </section>
+
+      <section class="responsive">
+        <picture class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/rain.jpg"
+            alt="rain"
+          />
+        </picture>
+        <p class="desc">RAIN</p>
+      </section>
+
+      <section class="responsive">
+        <picture class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/snow.jpg"
+            alt="snow"
+          />
+        </picture>
+        <p class="desc">SNOW</p>
+      </section>
+      <section class="responsive">
+        <picture class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/sunny.jpg"
+            alt="sunny"
+          />
+        </picture>
+        <p class="desc">SUNNY</p>
+      </section>
+
+      <section class="responsive">
+        <picture class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/sunnycloud.jpg"
+            alt="partlycloudy"
+          />
+        </picture>
+        <p class="desc">PARTLY CLOUDY</p>
+      </section>
+
+      <section class="responsive">
+        <picture class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/windy.jpg"
+            alt="windy"
+          />
+        </picture>
+        <p class="desc">WINDY</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="copyrightyear"></span> | CODY THOMAS</p>
+      <p><span id="currentdate"></span></p>
+    </footer>
+  </body>
+</html>
