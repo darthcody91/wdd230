@@ -1,0 +1,12 @@
+@media only screen and (min-width: 60em){
+
+
+    th, td {
+        padding: 7px 15px;
+        border: 1px solid grey;
+        font-size: 2em;
+    }
+    
+
+
+}
