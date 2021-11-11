@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STORM CENTER</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <meta name="description" content="WDD 230: Weather Site" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/js.js"></script>
+  </head>
+
+  <body>
+    <header class="headerbar">
+      <picture class="headerimg">
+        <img src="images/logo.png" alt="se idaho logo" />
+      </picture>
+      <section class="headings">
+        <h1>SOUTHEAST IDAHO CO-OP</h1>
+        <q class="motto">We're more than just potato farmers</q>
+      </section>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">≡</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a  href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a class="active" href="#">Storm Center</a></li>
+        <li><a  href="#">Gallery</a></li>
+      </ul>
+    </nav>
+<h1 class="title"> STORM CENTER</h1>
+    <main>
+      
+        <form method="get" action="/lesson8-2/thanks.html" class="form">
+            <fieldset class="box1">
+                <label>FIRST NAME - 
+                    <input type="text" size="10" name="input1"  minlength=3  >
+                </label><br>
+                <label>LAST NAME - 
+                    <input type="text" size="10" name="input1"  minlength=5 >
+                </label><br>
+           
+                <label for="email">EMAIL - </label>
+                <input type="email" id="email" name="email" placeholder="user@email.org"><br>
+                <label for="tel">PHONE - </label>
+                <input type="tel" id="phone" name="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                <label for="zip">ZIP - </label>
+                <input id="zip" name="zip" type="text" size="10" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+           </fieldset>
+
+           <fieldset class="box2">
+            <label>STORM DATE - 
+                <input type="date" name="theDate"></label><br>
+                <label>STORM TYPE - 
+                    <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+                        <option value="" disabled selected>Select storm type ...</option>
+                        <option value="Flood">Flash Flood</option>
+                        <option value="Hail">Hail</option>
+                        <option value="Hurricane">Hurricane</option>
+                        <option value="Thunder">Thunderstorm</option>
+                        <option value="Tornado">Tornado</option>
+                    </select></label><br>
+                    <label for="rating">STORM SEVERITY &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist> <br>
+                    <label>STORM REGION - 
+                        <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+                            <option value="" disabled selected>Select region ...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda">Soda Springs</option>
+                            <option value="Fish">Fish Haven</option>
+                        </select></label><br>
+            </fieldset>
+
+        
+           
+                <fieldset class="box3">
+                    <lable>IN DANGER? <em>(Choose one)</em></lable>
+                    <div class="selection">
+                        <input type="radio" id="no" name="time" checked> <label for="no"> NO</label>
+                    </div>
+                    <div class="selection">
+                        <label><input type="radio" id="yes" name="time" > YES</label>
+                    </div>
+                    <div class="selection">
+                        <label><input type="radio" id="maybe" name="time" > MAYBE</label>
+                    </div>
+             
+                    <br>
+                <label for="txtbox">ADDITIONAL INFORMATION OR COMMENTS</label><br>
+                <textarea id="txtbox" name="txtbox" rows="4" cols="25"> </textarea>
+                <br>
+            </fieldset>
+            
+           
+                
+            
+        </form>  
+        <div class="sub">
+            <input type="submit" value="Submit"><br>
+        </div><br>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="copyrightyear"></span> | CODY THOMAS</p>
+      <p><span id="currentdate"></span></p>
+    </footer>
+  </body>
+</html>

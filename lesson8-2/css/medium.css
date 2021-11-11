@@ -1,0 +1,22 @@
+@media only screen and (min-width: 37.5em) {
+    header img {
+        width: 65px;
+  height: auto;
+  margin: 10px;
+  display: inline;
+      }
+
+    
+      .form {
+       
+        font-size: 1.25em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding-bottom: 2em;
+       }
+      
+
+  
+
+  }
+  
