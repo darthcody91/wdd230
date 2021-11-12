@@ -3,13 +3,12 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.25em;
-    background-color: #9fa99f;
+   
 }
 
 h1 {
-    border: 1px solid #ce9950;
-    padding: 10px;
-    background-color: #eeefee;
+   
+    
     text-align: center;
 }
 
@@ -21,22 +20,30 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     text-align: center;
-    background-color: #eeefee;
+    
     
 }
 
-.cards section:nth-child(even) {
-    background-color: #e3e5e3;
-    padding-top: 10px;
+section {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 100%;
+  border-style: solid;
+  border-color: #606c38;
+  border-radius: 15px;
+  background-color: #fefae0;
+  
 }
 
+
+
+
 section img {
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 
 .highlight {
-    color: #084c61;
+    color: #bc6c25;
 }
 
 footer{
