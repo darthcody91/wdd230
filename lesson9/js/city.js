@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 fetch(requestURL)
     .then(function (response) {
         return response.json();
@@ -6,25 +6,35 @@ fetch(requestURL)
     .then(function (jsonObject) {
         console.table(jsonObject); 
         
-        const prophets = jsonObject['prophets'];
-        prophets.forEach((prophet) => {
+        const towns = jsonObject['towns'];
+
+        const towndata = towns.filter((towns) => towns.name === 'Soda Springs' || towns.name === 'Preston' || towns.name === 'Fish Haven');
+        towndata.forEach((x) => {
         let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let birthdate = document.createElement('p');
-        let birthplace = document.createElement('p');
+        let name= document.createElement('h2');
+        let motto = document.createElement('p');
+        let yearfounded = document.createElement('p');
+        let population = document.createElement('p');
+        let rainfall = document.createElement('p');
         let image = document.createElement('img');
 
-        h2.innerHTML = `${prophet.name} <span class="highlight"> ${prophet.lastname}`;
-        birthdate.innerHTML = `Born: ${prophet.birthdate}`;
-        birthplace.innerHTML = `${prophet.birthplace}`;
-        image.setAttribute('src', prophet.imageurl);
+        name.innerHTML = `${x.name}`;
+        motto.innerHTML = `${x.motto}`;
+        yearfounded.innerHTML = `Year Founded - ${x.yearFounded}`;
+        population.innerHTML = `Population - ${x.currentPopulation}`;
+        rainfall.innerHTML = `Annual Rain Fall - ${x.averageRainfall}`;
+        image.setAttribute('src', x.photo); 
 
 
-        card.appendChild(h2);
-        card.appendChild(birthdate);
-        card.appendChild(birthplace);
+        card.appendChild(name);
+        card.appendChild(motto);
+        card.appendChild(yearfounded);
+        card.appendChild(population);
+        card.appendChild(rainfall);
         card.appendChild(image);
 
         document.querySelector('div.cards').appendChild(card);
 
         });
+    });
+
