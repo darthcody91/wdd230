@@ -139,7 +139,7 @@ h1 {
 .sub {
     text-align: center;
     padding: 10px;
-    
+    justify-content: center;
 }
 
 .box1 {
@@ -159,4 +159,13 @@ h1 {
   }  
    
 
-
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
