@@ -55,17 +55,17 @@
 
         <label for="email">EMAIL - </label>
         <input type="email" id="email" name="email" placeholder="user@email.org" required><br>
-        <label for="tel">PHONE - </label>
+        <label>PHONE - </label>
         <input type="tel" id="phone" name="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           required><br>
-        <label for="zip" required>ZIP - </label>
-        <input id="zip" name="zip" type="number" size="10" inputmode="numeric" required>
+        <label for="zip">ZIP - </label>
+        <input id="zip" name="zip" type="number" required>
       </fieldset>
 
       <fieldset class="box2">
         <label>STORM DATE -
           <input type="date" name="theDate"></label><br>
-        <label for="storm">SELECT STORM TYPE</label>
+        <label>SELECT STORM TYPE</label>
 
 
         <input list="stormtype">
@@ -111,13 +111,13 @@
       <fieldset class="box3">
         <lable>IN DANGER? <em>(Choose one)</em></lable>
         <div class="selection">
-          <input type="radio" id="no" name="time" checked> <label for="no"> NO</label>
+          <input type="radio" id="no" name="time" checked for="no"> NO
         </div>
         <div class="selection">
-          <label><input type="radio" id="yes" name="time"> YES</label>
+          <input type="radio" id="yes" name="time"> YES
         </div>
         <div class="selection">
-          <label><input type="radio" id="maybe" name="time"> MAYBE</label>
+          <input type="radio" id="maybe" name="time"> MAYBE
         </div>
 
         <br>
