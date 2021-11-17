@@ -12,7 +12,7 @@ fetch(requestURL)
         towndata.forEach((x) => {
         let card = document.createElement('section');
         let name= document.createElement('h2');
-        let motto = document.createElement('p');
+        let motto = document.createElement('h3');
         let yearfounded = document.createElement('p');
         let population = document.createElement('p');
         let rainfall = document.createElement('p');

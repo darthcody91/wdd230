@@ -1,7 +1,7 @@
 header,
 main {
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 header {
@@ -10,7 +10,9 @@ header {
 }
 
 header img {
-  display: none;
+  width: 65px;
+  height: auto;
+  margin: 10px;
 }
 
 nav a:hover {
@@ -82,17 +84,19 @@ nav a:hover {
   color: #283618;
 }
 
-.title {
-    font-size: 2rem;
-    letter-spacing: 1px;
-    font-family: "Titillium Web", sans-serif;
-    
-    text-align: center;
-    
-  }
-
-
-
+.cards {
+  max-width: auto;
+  margin: 0 auto;
+  display: block;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  padding: 5px;
+}
+main section {
+  width: 100%;
+  background-color: #fefae0;
+  text-align: center;
+}
 
 footer {
   background-color: #283618;
@@ -120,52 +124,35 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* site specific */
-
-h1 {
-    text-align: center;
+main h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #dda15e;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.form {
-       
-    font-size: 1.5em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding-bottom: 2em;
-    font-family: "Titillium Web", sans-serif;
+main h2 {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+h2 {
+    color: #283618;
+    font-family: "Bebas Neue", cursive;
     
-   }
-
-.sub {
-    text-align: center;
-    padding: 10px;
-    justify-content: center;
-}
-
-.box1 {
-    box-sizing: border-box;
-    background-color: #eeefee;
-    border-radius: 15px;
   }
-  .box2 {
-    box-sizing: border-box;
-    background-color: #eeefee;
-    border-radius: 15px;
-  }
-  .box3 {
-    box-sizing: border-box;
-    background-color: #eeefee;
-    border-radius: 15px;
-  }  
-   
 
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  h3 {
+    color: #283618;
+    font-style: italic;
+    font-family: "Titillium Web", sans-serif;
   }
-  
-  /* Firefox */
-  input[type=number] {
-    -moz-appearance: textfield;
+
+  p {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.10em;
   }
