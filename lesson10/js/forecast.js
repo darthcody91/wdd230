@@ -2,15 +2,14 @@ const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    
-  const noon = jsObject.list.filter(x => x.dt_txt.includes('12:00:00'));
-  console.log(noon);
-  
-  noon.forEach (forecast => {
-    let thedate = new Date(forecast.dt_txt);
-    
-    
-  });
-
+ 
+ //noon.forEach (forecast => {
+ // let thedate = new Date(forecast.dt_txt);
+       
+ const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+ const desc = jsObject.weather[0].description;  // note how we reference the weather array
+ document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+ document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+ document.getElementById('icon').setAttribute('alt', desc);
 
 });
