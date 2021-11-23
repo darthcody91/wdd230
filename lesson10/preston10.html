@@ -21,6 +21,8 @@
   <script defer src="js/nav.js"></script>
   <script defer src="js/alert.js"></script>
   <script src="js/weatherapi.js"></script>
+  <script src="js/windchill.js"></script>
+  <script defter src="js/forecast.js"></script>
 </head>
 
 <body>
@@ -59,23 +61,23 @@
         <table>
           <tr>
             <td>Currently</td>
+            <td><span id="current"></span></td>
+          </tr>
+          <tr>
+            <td>Temperature</td>
             <td><span id="current-temp"></span>&deg; F</td>
           </tr>
           <tr>
-            <td>High</td>
-            <td>65°F</td>
-          </tr>
-          <tr>
             <td>Wind Chill</td>
-            <td></td>
+            <td><span id="wind-chill"></span></td>
           </tr>
           <tr>
             <td>Humidity</td>
-            <td>70%</td>
+            <td><span id="humidity"></span> %</td>
           </tr>
           <tr>
             <td>Wind Speed</td>
-            <td>5 MPH</td>
+            <td><span id="wind-speed"></span> MPH</td>
           </tr>
         </table>
       </div>

@@ -4,4 +4,11 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
     document.getElementById('current-temp').textContent = jsObject.main.temp;
+    document.getElementById('wind-speed').textContent = jsObject.wind.speed;
+    document.getElementById('humidity').textContent = jsObject.main.humidity;
+    document.getElementById('current').textContent = jsObject.weather[0].main;
 });
+
+
+
+
