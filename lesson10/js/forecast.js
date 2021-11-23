@@ -1,15 +1,40 @@
-const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=55fabb0529e11ab638f2e68f25e2cb38";
+
+
+const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=55fabb0529e11ab638f2e68f25e2cb38&units=imperial";
 fetch(forecastURL)
   .then((response) => response.json())
-  .then((jsObject) => {
+  .then(data => {
  
- //noon.forEach (forecast => {
- // let thedate = new Date(forecast.dt_txt);
-       
- const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
- const desc = jsObject.weather[0].description;  // note how we reference the weather array
- document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
- document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
- document.getElementById('icon').setAttribute('alt', desc);
+  const noon = data.list.filter(x => x.dt_txt.includes('12:00:00'));
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const d = new Date(data.list[0].dt* 1000);
+    const dayName = days[d.getDay()];
+    console.log(dayName)
+ 
+  
+    noon.forEach(x => {
+    let card = document.createElement('section') 
+    let day = document.createElement('h3');
+    let dayName = document.createElement('h3');
+    let temp = document.createElement('p');
+    let desc = document.createElement('p');
+    
 
+    day.innerHTML = `${x.dt_txt}`;
+    temp.innerHTML = `${x.main.temp} °F`;
+    desc.innerHTML = `${x.weather[0].description}`.toUpperCase(); 
+    
+   
+
+
+    card.appendChild(day);
+    card.appendChild(dayName);
+    card.appendChild(temp);
+    card.appendChild(desc);
+   
+
+    document.querySelector('div.cards').appendChild(card);
+  });
+
+       
 });
