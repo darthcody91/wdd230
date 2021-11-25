@@ -7,36 +7,38 @@ fetch(forecastURL)
  
   
   const noon = data.list.filter(x => x.dt_txt.includes('12:00:00'));
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  const d = new Date(data.list[0] * 1000);
-  const weekday = days[d.getDay()]; //this is where the days from the json goes --- figure out how to loop the date//
-    console.log(weekday)
-  
+  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday','Sunday'];
+  const d = new Date(data.list[0].dt * 1000);
+  let weekday = d.getDay(); //this is where the days from the json goes --- figure out how to loop the date//
+    console.log(days[weekday])
+  let counter = 0;
 
-    
-
-  
     noon.forEach(x => {
     let card = document.createElement('section') 
     let day = document.createElement('h3');
     let temp = document.createElement('p');
     let desc = document.createElement('p');
-    
-    
+    let imagesrc = "http://openweathermap.org/img/wn/" + x.weather[0].icon + '.png';
+    let image = document.createElement('img');
 
-    day.innerHTML = `${x.dt_txt}`;
+    day.innerHTML = `${days[weekday]}`;
     temp.innerHTML = `${x.main.temp} °F`;
     desc.innerHTML = `${x.weather[0].description}`.toUpperCase(); 
-    
+    image.setAttribute('src', imagesrc);
 
-   
+    if (weekday <5) {
+      weekday += 1;
+    }
+    else {
+      weekday = 0;
+    }
 
- 
-    
+    counter += 1;
 
     card.appendChild(day);
     card.appendChild(temp);
     card.appendChild(desc);
+    card.appendChild(image)
    
    
 
