@@ -336,7 +336,15 @@
 }
 
 
+.cards {
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+align-items: center;
+text-align: center;
+font-size: 1em;
+background-color: #eeefee;
 
+}
 
 
 

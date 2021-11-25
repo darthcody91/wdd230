@@ -336,3 +336,19 @@ color: white;
 
 color: white;
 }
+
+.cards {
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+align-items: center;
+text-align: center;
+font-size: .9em;
+
+
+
+}
+
+
+  
+
+
