@@ -21,13 +21,13 @@ fetch(forecastURL)
     let day = document.createElement('h3');
     let temp = document.createElement('p');
     let desc = document.createElement('p');
-  
+    
     
 
     day.innerHTML = `${x.dt_txt}`;
     temp.innerHTML = `${x.main.temp} °F`;
     desc.innerHTML = `${x.weather[0].description}`.toUpperCase(); 
-      
+    
 
    
 
