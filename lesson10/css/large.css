@@ -1,4 +1,7 @@
 @media only screen and (min-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     margin: auto;
   }
@@ -342,11 +345,33 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 align-items: center;
 text-align: center;
 font-size: 1em;
-background-color: #eeefee;
+background-color: white;
 
 }
 
+.cards h3{
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 2px;
+  font-size:2em;
+  
+}
 
+.cards p{
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 2px;
+  font-size:1.25em;
+}
+
+.cards section {
+  background-color: #dda15e;
+  border-radius: 20px;
+  margin-left:3px;
+}
+
+.cards img {
+  width: 80px;
+  height: auto;
+}
 
 
 }

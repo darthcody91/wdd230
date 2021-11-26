@@ -342,11 +342,34 @@ color: white;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 align-items: center;
 text-align: center;
-font-size: .9em;
-
-
-
+font-size: .5em;
+background-color:lightgrey;
 }
+
+.cards h3 {
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 2px;
+  font-size:1.2em;
+}
+
+
+.cards p{
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: .5px;
+  font-size:.9em;
+}
+
+.cards section {
+  background-color: none;
+  border-radius: 20px;
+ 
+}
+
+.cards img {
+  width: 40px;
+  height: auto;
+}
+
 
 
   

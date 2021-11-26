@@ -16,12 +16,12 @@ fetch(forecastURL)
     noon.forEach(x => {
     let card = document.createElement('section') 
     let day = document.createElement('h3');
-    let temp = document.createElement('p');
+    let temp = document.createElement('h3');
     let desc = document.createElement('p');
     let imagesrc = "http://openweathermap.org/img/wn/" + x.weather[0].icon + '.png';
     let image = document.createElement('img');
 
-    day.innerHTML = `${days[weekday]}`;
+    day.innerHTML = `${days[weekday]}`.toUpperCase();
     temp.innerHTML = `${x.main.temp} °F`;
     desc.innerHTML = `${x.weather[0].description}`.toUpperCase(); 
     image.setAttribute('src', imagesrc);
@@ -37,8 +37,8 @@ fetch(forecastURL)
 
     card.appendChild(day);
     card.appendChild(temp);
-    card.appendChild(desc);
-    card.appendChild(image)
+    card.appendChild(image);
+    card.appendChild(desc)
    
    
 
