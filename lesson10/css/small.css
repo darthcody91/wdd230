@@ -339,24 +339,24 @@ color: white;
 
 .cards {
   display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr;
 align-items: center;
 text-align: center;
-font-size: .5em;
-background-color:lightgrey;
+
+background-color:#eeefee;
 }
 
 .cards h3 {
   font-family: "Titillium Web", sans-serif;
   letter-spacing: 2px;
-  font-size:.8em;
+  font-size:2em;
 }
 
 
 .cards p{
   font-family: "Titillium Web", sans-serif;
   letter-spacing: .5px;
-  font-size:.9em;
+  font-size:1.5em;
 }
 
 .cards section {
@@ -366,8 +366,10 @@ background-color:lightgrey;
 }
 
 .cards img {
-  width: 40px;
+  width: 80px;
   height: auto;
+  background-color: lightskyblue;
+  border-radius: 40px;
 }
 
 
