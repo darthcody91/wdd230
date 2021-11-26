@@ -1,3 +1,4 @@
+@media only screen and (min-width: 320px) and (max-width: 479px) {
 header,
 main {
   margin-left: 0.5em;
@@ -377,3 +378,4 @@ background-color:#eeefee;
   
 
 
+}
