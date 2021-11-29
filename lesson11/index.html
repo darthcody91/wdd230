@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="shortcut icon" type="image/png" href="imageshome/favicon.png" />
+    <meta name="description" content="WDD 230: Weather Site" />
+    <link rel="stylesheet" href="csshome/small.css" />
+    <link rel="stylesheet" href="csshome/medium.css" />
+    <link rel="stylesheet" href="csshome/large.css" />
+    <script defer src="jshome/dates.js"></script>
+    <script defer src="jshome/nav.js"></script>
+    <script defer src="jshome/city.js"></script>
+</head>
+
+<body>
+    <header class="headerbar">
+        <picture class="headerimg">
+            <img src="imageshome/logo.png" alt="se idaho logo" />
+        </picture>
+        <section class="headings">
+            <h1>SOUTHEAST IDAHO CO-OP</h1>
+            <q class="motto">We're more than just potato farmers</q>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham"href="#">≡</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a  href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="cards"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyrightyear"></span> | CODY THOMAS</p>
+        <p><span id="currentdate"></span></p>
+    </footer>
+</body>
+
+</html>
