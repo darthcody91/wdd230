@@ -19,11 +19,12 @@
   <link rel="stylesheet" href="csscity/small.css" />
   <link rel="stylesheet" href="csscity/medium.css" />
   <link rel="stylesheet" href="csscity/large.css" />
-  <script src="jscity/dates.js"></script>
-  <script src="jscity/nav.js"></script>
+  <script defer src="jscity/dates.js"></script>
+  <script defer src="jscity/nav.js"></script>
   <script src="jscity/alert.js"></script>
   <script src="jscity/weatherapi.js"></script>
   <script src="jscity/forecast.js"></script>
+ 
 </head>
 
 <body>
@@ -91,8 +92,11 @@
     </div>
     </div>
     </div>
-
- 
+<br>
+<div class="eventcards">
+  <h2>UPCOMING EVENTS</h2>
+  <span id="eventdata"> </span>
+</div>
 
     <h1>People of Preston</h1>
     <section class="article">
@@ -165,6 +169,7 @@
     <p>&copy; <span id="copyrightyear"></span> | CODY THOMAS</p>
     <p><span id="currentdate"></span></p>
   </footer>
+  <script src="jscity/cityevents.js"></script>
 </body>
 
 </html>

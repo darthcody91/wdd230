@@ -1,5 +1,8 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-header,
+body {
+  overflow-x: hidden;
+}
+  header,
 main {
   margin-left: 0.5em;
   margin-right: 0em;
@@ -374,7 +377,43 @@ background-color:#eeefee;
 }
 
 
+.eventcards {
+  background-color: #283618;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  
+}
 
+.eventcards {
+  background-color: #283618;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.eventcards h2 {
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 2px;
+  font-size:2em;
+  color: #fefae0;
+  text-align: center;
+  
+}
+
+.eventcards p {
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1px;
+  font-size: .75em;
+  color: #fefae0;
+  text-align: left;
+  font-weight: lighter;
+  margin-left: 10px;
+  padding: 1px;
+}
   
 
 
