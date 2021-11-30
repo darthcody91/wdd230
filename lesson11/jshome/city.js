@@ -16,15 +16,15 @@ fetch(requestURL)
         let yearfounded = document.createElement('p');
         let population = document.createElement('p');
         let rainfall = document.createElement('p');
-        let imagesrc = "lesson11/imageshome" + x.photo[0]+ '.png';
         let image = document.createElement('img');
+        
 
         name.innerHTML = `${x.name}`;
         motto.innerHTML = `${x.motto}`;
         yearfounded.innerHTML = `Year Founded - ${x.yearFounded}`;
         population.innerHTML = `Population - ${x.currentPopulation}`;
         rainfall.innerHTML = `Annual Rain Fall - ${x.averageRainfall}`;
-        image.setAttribute('src', imagesrc);
+        image.setAttribute('imageshome', `${x.photo}`);
 
 
         card.appendChild(name);
