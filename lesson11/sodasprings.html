@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+
+    <title>SODA SPRINGS</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <meta name="description" content="WDD 230: Weather Site" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="csscity/small.css" />
+    <link rel="stylesheet" href="csscity/medium.css" />
+    <link rel="stylesheet" href="csscity/large.css" />
+    <script defer src="jscity/dates.js"></script>
+    <script defer src="jscity/nav.js"></script>
+    <script src="jscity/alert.js"></script>
+    <script src="jscity/weatherapi.js"></script>
+    <script src="jscity/forecastsoda.js"></script>
+  </head>
+
+  <body>
+    <header class="headerbar">
+      <picture class="headerimg">
+        <img src="images/logo.png" alt="se idaho logo" />
+      </picture>
+      <section class="headings">
+        <h1>SOUTHEAST IDAHO CO-OP</h1>
+        <q class="motto">We're more than just potato farmers</q>
+      </section>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">≡</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a class="active" href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>SODA SPRINGS</h1>
+      <div class="container">
+        <div class="sumlarge">
+          <h3>WEATHER SUMMARY</h3>
+          <table>
+            <tr>
+              <td>Currently</td>
+              <td><span id="current"></span></td>
+            </tr>
+            <tr>
+              <td>Temperature</td>
+              <td><span id="current-temp"></span>&deg; F</td>
+            </tr>
+            <tr>
+              <td>Wind Chill</td>
+              <td><span id="wind-chill"></span></td>
+            </tr>
+            <tr>
+              <td>Humidity</td>
+              <td><span id="humidity"></span> %</td>
+            </tr>
+            <tr>
+              <td>Wind Speed</td>
+              <td><span id="wind-speed"></span> MPH</td>
+            </tr>
+          </table>
+        </div>
+        <img class="weatherimg" src="imageshome/sodasprings.jpg" alt="farm" />
+      </div>
+
+      <div class="cards"></div>
+      <br />
+      <div class="eventcards">
+        <h2>UPCOMING EVENTS</h2>
+        <span id="eventdata"> </span>
+      </div>
+
+      <h1>Soda Springs Spotlight</h1>
+      <section class="article">
+        <img src="imagescity/Jeb.jpg" alt="jeb" />
+        <p>
+          This week in Soda Springs Spotlight, we want to introduce Mr. Jeb
+          Jinglehimershimt. The brother of John Jacob, Jeb, is a potato farmer
+          from our beloved Soda Springs. He spends his days tending to his
+          precious potatoes, and loves to sell them locally becuase he is a big
+          believer in small town business.
+        </p>
+        <p>
+          He has been a "tater" farmer his whole life. And he wouldn't have it
+          any other way. He knows the joy that potatoes bring to people's lives
+          all over the world. He likes to call him the Santa Claus of food. His
+          love of potatoes started at a young age, when his father was a banker
+          in the big city. His father would bring home bags of chips, and french
+          fries to share to the twenty children of the family. Jeb knew that he
+          wanted to grow potatoes when he ate those fries. Though, he never
+          understood what is so french about them...
+        </p>
+        <p>
+          This has been a tough year for Jeb and his farm. He is holding a special sale to sell as many bags of potatoes before the year is up.
+        </p>
+        <div class="recipe">
+          <p>JEB'S FAMOUS POTATOES</p>
+        </div>
+        <ul class="recipe">
+          <li>Single Potato - $1.00</li>
+          <li>Baker's Dozen - $11.00</li>
+          <li>Small Bag - $20.00</li>
+          <li>Medium Bag - $30.00</li>
+          <li>Large Bag - $45.00</li>
+          <li>Truck Load - $150.00</li>
+        </ul>
+        <div>
+          <p>
+            Come by the farmer's market on Saturdays at 10am to visit Jeb.
+          </p>
+         
+        </div>
+      </section>
+
+      <br />
+
+      <div class="flexcontainer">
+        <div class="flexleft">
+          <img src="imagescity/map.png" alt="farm" />
+        </div>
+        <div class="flexright">
+          <p class="flextitle">Southeast Idaho CO-OP</p>
+          <p>📍 653 Potato Lane</p>
+          <p>📞 555-736-7463</p>
+          <a
+            href="https://youtu.be/dQw4w9WgXcQ?t=10"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://youtu.be/dQw4w9WgXcQ?t=10"
+            class="fa fa-instagram"
+          ></a>
+          <a href="https://youtu.be/dQw4w9WgXcQ?t=10" class="fa fa-twitter"></a>
+          <a href="https://youtu.be/dQw4w9WgXcQ?t=10" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="copyrightyear"></span> | CODY THOMAS</p>
+      <p><span id="currentdate"></span></p>
+    </footer>
+    <script src="jscity/cityeventssoda.js"></script>
+  </body>
+</html>
